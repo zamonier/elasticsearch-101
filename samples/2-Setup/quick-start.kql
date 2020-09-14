@@ -1,0 +1,17 @@
+GET /_cat/health
+
+GET /_cat/nodes?v
+
+GET /_cat/indices?v
+
+PUT /sales
+
+PUT /sales/_doc/1234
+{
+  "orderId":"1234",
+  "orderAmount":"700"
+}
+
+GET /sales/_doc/1234
+
+DELETE /sales
