@@ -1,0 +1,11 @@
+GET /my-test/_doc/1
+
+POST /_bulk
+{ "index" : { "_index" : "my-test-console", "_type" : "my-type", "_id" : "1" } }
+{ "col1" : "val1" }
+{ "index" : { "_index" : "my-test-console", "_type" : "my-type", "_id" : "2" } }
+{ "col1" : "val2"}
+{ "index" : { "_index" : "my-test-console", "_type" : "my-type", "_id" : "3" } }
+{ "col1" : "val3" }
+
+GET /my-test-console/_doc/1
